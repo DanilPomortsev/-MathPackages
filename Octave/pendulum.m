@@ -20,6 +20,7 @@ function retval = pendulum (length, theta0, dt, time)
     set(hline, 'YData', [1.5*length, 1.5*length - length*cos(theta)]);
     set(hball, 'XData', 1.5*length + length*sin(theta));
     set(hball, 'YData', 1.5*length - length*cos(theta));
+    set(hball, 'MarkerFaceColor', 'r');
 
     drawnow
   endfor
